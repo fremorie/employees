@@ -1,9 +1,9 @@
 // @flow
 
-import React, {useState} from 'react';
+import React from 'react';
 import {useSelector} from 'react-redux';
 
-import {Modal, Button, InputGroup} from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 
 import {isEmployeeAddModalOpen} from '../../selectors';
 
@@ -21,11 +21,9 @@ const EmployeeAddModal = ({onHide, handleSubmit}: Props) => {
     return (
         <Modal show={isOpen} onHide={onHide}>
             <Modal.Header closeButton>
-                <Modal.Title>Добавление нового сотрудника</Modal.Title>
+                <Modal.Title>Новый сотрудник</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-                <EmployeeForm onHide={onHide} handleSubmit={handleSubmit}/>
-            </Modal.Body>
+            <EmployeeForm onHide={onHide} handleSubmit={handleSubmit}/>
         </Modal>
     );
 };

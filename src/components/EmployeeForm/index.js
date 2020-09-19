@@ -3,7 +3,7 @@
 import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 
-import {InputGroup, FormControl, Button, Modal} from 'react-bootstrap';
+import {InputGroup, FormControl, Button, Modal, Form} from 'react-bootstrap';
 
 import {getNextEmployeeId} from '../../selectors';
 import type {Employee} from '../../types';
@@ -26,59 +26,92 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
     const [jobPosition, setJobPosition] = useState(employee?.jobPosition || '');
     const [description, setDescription] = useState(employee?.description || '');
 
+    const [validated, setValidated] = useState(false);
+
+    const onSubmit = event => {
+        const form = event.currentTarget;
+        // disables page refreshing
+        event.preventDefault();
+
+        if (form.checkValidity() === false) {
+            event.stopPropagation();
+            setValidated(true);
+
+            return;
+        }
+
+        handleSubmit({employee: {name, lastname, jobPosition, description, id}, isNew});
+    };
+
     return (
-        <>
-            <InputGroup className="mb-3">
-                <FormControl
-                    placeholder="Имя"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    onChange={e => setName(e.target.value)}
-                    value={name}
-                    readOnly={readonly}
-                />
-            </InputGroup>
+        <Form
+            noValidate
+            validated={validated}
+            onSubmit={onSubmit}>
+            <Modal.Body>
+                <InputGroup className="mb-3">
+                    <FormControl
+                        placeholder="Имя"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        onChange={e => setName(e.target.value)}
+                        value={name}
+                        readOnly={readonly}
+                        required
+                    />
+                    <FormControl.Feedback type="invalid">
+                        Это обязательное поле.
+                    </FormControl.Feedback>
+                </InputGroup>
 
-            <InputGroup className="mb-3">
-                <FormControl
-                    placeholder="Фамилия"
-                    aria-label="LastName"
-                    aria-describedby="basic-addon2"
-                    onChange={e => setLastname(e.target.value)}
-                    value={lastname}
-                    readOnly={readonly}
-                />
-            </InputGroup>
+                <InputGroup className="mb-3">
+                    <FormControl
+                        placeholder="Фамилия"
+                        aria-label="LastName"
+                        aria-describedby="basic-addon2"
+                        onChange={e => setLastname(e.target.value)}
+                        value={lastname}
+                        readOnly={readonly}
+                        required
+                    />
+                    <FormControl.Feedback type="invalid">
+                        Это обязательное поле.
+                    </FormControl.Feedback>
+                </InputGroup>
 
-            <InputGroup className="mb-3">
-                <FormControl
-                    placeholder="Должность"
-                    aria-label="JobPosition"
-                    aria-describedby="basic-addon2"
-                    onChange={e => setJobPosition(e.target.value)}
-                    value={jobPosition}
-                    readOnly={readonly}
-                />
-            </InputGroup>
+                <InputGroup className="mb-3">
+                    <FormControl
+                        placeholder="Должность"
+                        aria-label="JobPosition"
+                        aria-describedby="basic-addon2"
+                        onChange={e => setJobPosition(e.target.value)}
+                        value={jobPosition}
+                        readOnly={readonly}
+                        required
+                    />
+                    <FormControl.Feedback type="invalid">
+                        Это обязательное поле.
+                    </FormControl.Feedback>
+                </InputGroup>
 
-            <InputGroup className="mb-3">
-                <FormControl
-                    placeholder="Описание"
-                    aria-label="Description"
-                    aria-describedby="basic-addon2"
-                    as="textarea" rows="3"
-                    onChange={e => setDescription(e.target.value)}
-                    value={description}
-                    readOnly={readonly}
-                />
-            </InputGroup>
+                <InputGroup className="mb-3">
+                    <FormControl
+                        placeholder="Описание"
+                        aria-label="Description"
+                        aria-describedby="basic-addon2"
+                        as="textarea" rows="3"
+                        onChange={e => setDescription(e.target.value)}
+                        value={description}
+                        readOnly={readonly}
+                    />
+                </InputGroup>
+            </Modal.Body>
 
             {!readonly && (
                 <Modal.Footer>
                     <Button
-                        variant="primary"
+                        variant="success"
                         type="submit"
-                        onClick={() => handleSubmit({employee: {name, lastname, jobPosition, description, id}, isNew})}
                     >
                         Сохранить
                     </Button>
@@ -87,7 +120,7 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
                     </Button>
                 </Modal.Footer>
             )}
-        </>
+        </Form>
     );
 };
 

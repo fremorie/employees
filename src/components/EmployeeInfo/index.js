@@ -1,50 +1,51 @@
 // @flow
 
 import React from 'react';
-import {useSelector} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {connect, useSelector} from 'react-redux';
 
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col, Button, Breadcrumb, Card} from 'react-bootstrap';
 
 import {getEmployeeById} from '../../selectors';
 
+import type {Employee} from '../../types';
+import {
+    closeEmployeeEditDialog,
+    openEmployeeEditDialog,
+    openTable,
+    updateEmployee,
+} from '../../actions';
+
 import EmployeeEditModal from '../EmployeeEditModal';
-import type {Employee} from "../../types";
 
 type Props = {|
     openTable: () => void,
-    openEditModal: () => void,
+    openEmployeeEditDialog: () => void,
     updateEmployee: ({employee: Employee, isNew: boolean}) => void,
     closeEmployeeEditDialog: () => void,
 |};
 
-const EmployeeInfo = ({openTable, openEditModal, updateEmployee, closeEmployeeEditDialog}: Props) => {
+const EmployeeInfo = ({openTable, openEmployeeEditDialog, updateEmployee, closeEmployeeEditDialog}: Props) => {
     const {name, lastname, jobPosition, description, id} = useSelector(getEmployeeById);
 
     return (
         <Container>
-            <Button onClick={openTable}>
-                Back to Table
-            </Button>
-            <Row>
-                <Col>Имя</Col>
-                <Col>{name}</Col>
-            </Row>
-            <Row>
-                <Col>Фамилия</Col>
-                <Col>{lastname}</Col>
-            </Row>
-            <Row>
-                <Col>Должность</Col>
-                <Col>{jobPosition}</Col>
-            </Row>
-            <Row>
-                <Col>Описание</Col>
-                <Col>{description}</Col>
-            </Row>
-
-            <Button onClick={openEditModal}>
-                Редактировать
-            </Button>
+            <Breadcrumb>
+                <Breadcrumb.Item onClick={openTable}>Список сотрудников</Breadcrumb.Item>
+                <Breadcrumb.Item active>{name} {lastname}</Breadcrumb.Item>
+            </Breadcrumb>
+            <Card>
+                <Card.Body>
+                    <Card.Title>{name} {lastname}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Должность: {jobPosition}</Card.Subtitle>
+                    <Card.Text>
+                        {description}
+                    </Card.Text>
+                    <Button variant="info" onClick={openEmployeeEditDialog}>
+                        Редактировать
+                    </Button>
+                </Card.Body>
+            </Card>
 
             <EmployeeEditModal
                 handleSubmit={updateEmployee}
@@ -55,4 +56,13 @@ const EmployeeInfo = ({openTable, openEditModal, updateEmployee, closeEmployeeEd
     );
 };
 
-export default EmployeeInfo;
+const mapDispatchToProps = dispatch => bindActionCreators({
+    openEmployeeEditDialog,
+    closeEmployeeEditDialog,
+    updateEmployee,
+    openTable,
+}, dispatch);
+
+const enhance = connect(null, mapDispatchToProps);
+
+export default enhance(EmployeeInfo);

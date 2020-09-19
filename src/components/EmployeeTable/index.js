@@ -1,37 +1,64 @@
 // @flow
 
 import React from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Button} from 'react-bootstrap';
+import {Add} from '@material-ui/icons';
 
 import EmployeeTable from './Table';
 import EmployeeAddModal from '../EmployeeAddModal';
 
-import type {Employee} from '../../types';
+import type {Employee, State} from '../../types';
+import {getEmployeeList} from '../../selectors';
+import {
+    closeEmployeeAddDialog,
+    openEmployeeAddDialog,
+    openEmployeeInfo,
+    updateEmployee,
+} from '../../actions';
 
 
-type Props = {|
-    openEmployeeAddDialog: () => void,
-    closeEmployeeAddDialog: () => void,
-    openEmployeeInfo: () => void,
-    handleSubmit: ({employee: Employee, isNew: boolean}) => void,
+type MappedProps = {|
     employees: Employee[],
 |};
 
-export default ({
+type Props = MappedProps & {|
+    openEmployeeAddDialog: () => void,
+    closeEmployeeAddDialog: () => void,
+    openEmployeeInfo: () => void,
+    updateEmployee: ({employee: Employee, isNew: boolean}) => void,
+|};
+
+const Table = ({
     openEmployeeAddDialog,
     closeEmployeeAddDialog,
-    handleSubmit,
+    updateEmployee,
     employees,
     openEmployeeInfo,
 }: Props) => (
     <Container>
         <EmployeeTable employees={employees} openEmployeeInfo={openEmployeeInfo}/>
-        <EmployeeAddModal onHide={() => closeEmployeeAddDialog()} handleSubmit={handleSubmit} />
-        <Button onClick={() => openEmployeeAddDialog()}>
-            Добавить
+        <EmployeeAddModal onHide={closeEmployeeAddDialog} handleSubmit={updateEmployee} />
+        <Button variant="info" onClick={openEmployeeAddDialog}>
+            Добавить <Add />
         </Button>
     </Container>
 );
 
+const mapStateToProps = (state: State): MappedProps => ({
+    employees: getEmployeeList(state),
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    openEmployeeAddDialog,
+    closeEmployeeAddDialog,
+    updateEmployee,
+    openEmployeeInfo,
+}, dispatch);
+
+const enhance = connect(mapStateToProps, mapDispatchToProps);
+
+export default enhance(Table);

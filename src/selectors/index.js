@@ -1,13 +1,15 @@
 // @flow
 import {createSelector} from 'reselect';
 
-import type {State, Employee} from '../types';
+import type {State, Employee, Screen} from '../types';
 
 export const isEmployeeAddModalOpen = (state: State): boolean => state.modal.isEmployeeAddModalOpen;
 export const isEmployeeEditModalOpen = (state: State): boolean => state.modal.isEmployeeEditModalOpen;
 
 export const getCurrentEmployeeId = (state: State): number | void => state.screenManager.employeeId;
 export const getEmployeeList = (state: State): Employee[] => state.employees;
+
+export const getCurrentScreen = (state: State): Screen => state.screenManager.currentScreen;
 
 export const getEmployeeById = createSelector(
     getCurrentEmployeeId,

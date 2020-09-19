@@ -37,32 +37,32 @@ export type OpenEmployeeInfoAction = {|
     payload: number,
 |};
 
-export const openEmployeeAddDialogAction = (): DefaultAction => ({
+export const openEmployeeAddDialog = (): DefaultAction => ({
     type: OPEN_EMPLOYEE_ADD_DIALOGUE,
 });
 
-export const closeEmployeeAddDialogAction = (): DefaultAction => ({
+export const closeEmployeeAddDialog = (): DefaultAction => ({
     type: CLOSE_EMPLOYEE_ADD_DIALOGUE,
 });
 
-export const openEmployeeEditDialogAction = (): DefaultAction => ({
+export const openEmployeeEditDialog = (): DefaultAction => ({
     type: OPEN_EMPLOYEE_EDIT_DIALOGUE,
 });
 
-export const closeEmployeeEditDialogAction = (): DefaultAction => ({
+export const closeEmployeeEditDialog = (): DefaultAction => ({
     type: CLOSE_EMPLOYEE_EDIT_DIALOGUE,
 });
 
-export const updateEmployeeAction = (payload: {|employee: Employee, isNew: boolean|}): UpdateEmployeeAction => ({
+export const updateEmployee = (payload: {|employee: Employee, isNew: boolean|}): UpdateEmployeeAction => ({
     type: ADD_NEW_EMPLOYEE,
     payload,
 });
 
-export const openEmployeeInfoAction = (payload: number): OpenEmployeeInfoAction => ({
+export const openEmployeeInfo = (payload: number): OpenEmployeeInfoAction => ({
     type: OPEN_EMPLOYEE_INFO,
     payload,
 });
 
-export const openTableAction = (): DefaultAction => ({
+export const openTable = (): DefaultAction => ({
     type: OPEN_TABLE,
 });

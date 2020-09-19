@@ -6,6 +6,8 @@ import {Table} from 'react-bootstrap';
 
 import type {Employee} from '../../types';
 
+import EmptyTable from './EmptyTable';
+
 const TableHeader = () => (
     <thead>
         <tr>
@@ -33,7 +35,7 @@ const EmployeeLine = ({
     orderNumber,
     onClick,
 }: EmployeeLineProps) => (
-    <tr onClick={onClick}>
+    <tr onClick={onClick} className="employeeLine">
         <td>{orderNumber}</td>
         <td>{name}</td>
         <td>{lastname}</td>
@@ -43,23 +45,31 @@ const EmployeeLine = ({
 
 type Props = {|
     employees: Employee[],
-    openEmployeeInfo: ({id: number}) => void,
+    openEmployeeInfo: (id: number) => void,
 |};
+
+const TableBody = ({employees, openEmployeeInfo}: Props) => (
+    <>
+        {employees.map(({name, lastname, jobPosition, id}, i) =>
+            (<EmployeeLine
+                name={name}
+                lastname={lastname}
+                jobPosition={jobPosition}
+                orderNumber={i + 1}
+                onClick={() => openEmployeeInfo(id)}
+                key={id}
+            />)
+        )}
+    </>
+);
 
 const EmployeeTable = ({employees, openEmployeeInfo}: Props) => (
     <Table bordered striped hover variant="dark">
         <TableHeader />
         <tbody>
-            {employees.map(({name, lastname, jobPosition, id}, i) =>
-                <EmployeeLine
-                    name={name}
-                    lastname={lastname}
-                    jobPosition={jobPosition}
-                    orderNumber={i + 1}
-                    onClick={() => openEmployeeInfo({id})}
-                    key={id}
-                />
-            )}
+            {employees.length
+                ? <TableBody employees={employees} openEmployeeInfo={openEmployeeInfo} />
+                : <EmptyTable nCols={4} />}
         </tbody>
     </Table>
 );

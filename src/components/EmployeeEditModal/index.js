@@ -1,9 +1,9 @@
 // @flow
 
-import React, {useState} from 'react';
+import React from 'react';
 import {useSelector} from 'react-redux';
 
-import {Modal, Button, InputGroup} from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 
 import {isEmployeeEditModalOpen} from '../../selectors';
 import type {Employee} from '../../types';
@@ -24,9 +24,7 @@ const EmployeeEditModal = ({onHide, handleSubmit, employee}: Props) => {
             <Modal.Header closeButton>
                 <Modal.Title>Редактирование</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-                <EmployeeForm onHide={onHide} handleSubmit={handleSubmit} employee={employee} />
-            </Modal.Body>
+            <EmployeeForm onHide={onHide} handleSubmit={handleSubmit} employee={employee} />
         </Modal>
     );
 };
