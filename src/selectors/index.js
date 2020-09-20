@@ -14,7 +14,7 @@ export const getCurrentScreen = (state: State): Screen => state.screenManager.cu
 export const getEmployeeById = createSelector(
     getCurrentEmployeeId,
     getEmployeeList,
-    (employeeId, employees) => employees.find(({id}) => id === employeeId),
+    (employeeId, employees) => employees.find(({id}) => id === employeeId) || {},
 );
 
 export const getNextEmployeeId = createSelector(

@@ -30,7 +30,7 @@ type EmployeeLineProps = {
     onClick: () => void,
 }
 
-const EmployeeLine = ({
+export const EmployeeLine = ({
     name,
     lastname,
     jobPosition,
@@ -56,7 +56,7 @@ type Props = {|
     openEmployeeInfo: (id: number) => void,
 |};
 
-const TableBody = ({employees, openEmployeeInfo}: Props) => (
+export const TableBody = ({employees, openEmployeeInfo}: Props) => (
     <>
         {employees.map(({name, lastname, jobPosition, id}, i) =>
             (<EmployeeLine
@@ -81,5 +81,7 @@ const EmployeeTable = ({employees, openEmployeeInfo}: Props) => (
         </tbody>
     </Table>
 );
+
+export {EmployeeTable as Base};
 
 export default EmployeeTable;

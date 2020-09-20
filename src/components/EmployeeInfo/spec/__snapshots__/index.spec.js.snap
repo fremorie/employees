@@ -1,0 +1,2332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeInfo рендерит необходимые элементы 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "getWrappingComponentRenderer": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+    "wrapInvoke": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "closeEmployeeEditDialog": [MockFunction],
+      "description": "description",
+      "id": 0,
+      "jobPosition": "jobPosition",
+      "lastname": "lastname",
+      "name": "name",
+      "openEmployeeEditDialog": [MockFunction],
+      "openTable": [MockFunction],
+      "updateEmployee": [MockFunction],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef
+            label="breadcrumb"
+            listProps={Object {}}
+          >
+            <ForwardRef
+              active={false}
+              linkProps={Object {}}
+              onClick={[MockFunction]}
+            >
+              Список сотрудников
+            </ForwardRef>
+            <ForwardRef
+              active={true}
+              linkProps={Object {}}
+            >
+              name
+               
+              lastname
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef
+            body={false}
+          >
+            <ForwardRef>
+              <ForwardRef>
+                name
+                 
+                lastname
+              </ForwardRef>
+              <ForwardRef
+                className="mb-2 text-muted"
+              >
+                Должность: 
+                jobPosition
+              </ForwardRef>
+              <ForwardRef>
+                description
+              </ForwardRef>
+              <ForwardRef
+                active={false}
+                disabled={false}
+                onClick={[MockFunction]}
+                variant="info"
+              >
+                Редактировать
+              </ForwardRef>
+               
+              <ForwardRef
+                active={false}
+                disabled={false}
+                onClick={[MockFunction]}
+                variant="secondary"
+              >
+                Вернуться к списку
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>,
+          <employeeeditmodal
+            employee={
+              Object {
+                "description": "description",
+                "id": 0,
+                "jobPosition": "jobPosition",
+                "lastname": "lastname",
+                "name": "name",
+              }
+            }
+            handleSubmit={[MockFunction]}
+            onHide={[MockFunction]}
+          />,
+        ],
+        "fluid": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="container"
+        >
+          <nav
+            aria-label="breadcrumb"
+          >
+            <ol
+              class="breadcrumb"
+            >
+              <li
+                class="breadcrumb-item"
+              >
+                <a
+                  href="#"
+                  role="button"
+                >
+                  Список сотрудников
+                </a>
+              </li>
+              <li
+                aria-current="page"
+                class="breadcrumb-item active"
+              >
+                name
+                 
+                lastname
+              </li>
+            </ol>
+          </nav>
+          <div
+            class="card"
+          >
+            <div
+              class="card-body"
+            >
+              <div
+                class="card-title h5"
+              >
+                name
+                 
+                lastname
+              </div>
+              <div
+                class="mb-2 text-muted card-subtitle h6"
+              >
+                Должность: 
+                jobPosition
+              </div>
+              <p
+                class="card-text"
+              >
+                description
+              </p>
+              <button
+                class="btn btn-info"
+                type="button"
+              >
+                Редактировать
+              </button>
+               
+              <button
+                class="btn btn-secondary"
+                type="button"
+              >
+                Вернуться к списку
+              </button>
+            </div>
+          </div>
+          <employeeeditmodal
+            employee="[object Object]"
+          />
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              label="breadcrumb"
+              listProps={Object {}}
+            >
+              <ForwardRef
+                active={false}
+                linkProps={Object {}}
+                onClick={[MockFunction]}
+              >
+                Список сотрудников
+              </ForwardRef>
+              <ForwardRef
+                active={true}
+                linkProps={Object {}}
+              >
+                name
+                 
+                lastname
+              </ForwardRef>
+            </ForwardRef>,
+            <ForwardRef
+              body={false}
+            >
+              <ForwardRef>
+                <ForwardRef>
+                  name
+                   
+                  lastname
+                </ForwardRef>
+                <ForwardRef
+                  className="mb-2 text-muted"
+                >
+                  Должность: 
+                  jobPosition
+                </ForwardRef>
+                <ForwardRef>
+                  description
+                </ForwardRef>
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="info"
+                >
+                  Редактировать
+                </ForwardRef>
+                 
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="secondary"
+                >
+                  Вернуться к списку
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>,
+            <employeeeditmodal
+              employee={
+                Object {
+                  "description": "description",
+                  "id": 0,
+                  "jobPosition": "jobPosition",
+                  "lastname": "lastname",
+                  "name": "name",
+                }
+              }
+              handleSubmit={[MockFunction]}
+              onHide={[MockFunction]}
+            />,
+          ],
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef
+                  active={false}
+                  linkProps={Object {}}
+                  onClick={[MockFunction]}
+                >
+                  Список сотрудников
+                </ForwardRef>,
+                <ForwardRef
+                  active={true}
+                  linkProps={Object {}}
+                >
+                  name
+                   
+                  lastname
+                </ForwardRef>,
+              ],
+              "label": "breadcrumb",
+              "listProps": Object {},
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <nav
+                aria-label="breadcrumb"
+              >
+                <ol
+                  class="breadcrumb"
+                >
+                  <li
+                    class="breadcrumb-item"
+                  >
+                    <a
+                      href="#"
+                      role="button"
+                    >
+                      Список сотрудников
+                    </a>
+                  </li>
+                  <li
+                    aria-current="page"
+                    class="breadcrumb-item active"
+                  >
+                    name
+                     
+                    lastname
+                  </li>
+                </ol>
+              </nav>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-label": "breadcrumb",
+                "children": <ol
+                  className="breadcrumb"
+                >
+                  <ForwardRef
+                    active={false}
+                    linkProps={Object {}}
+                    onClick={[MockFunction]}
+                  >
+                    Список сотрудников
+                  </ForwardRef>
+                  <ForwardRef
+                    active={true}
+                    linkProps={Object {}}
+                  >
+                    name
+                     
+                    lastname
+                  </ForwardRef>
+                </ol>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <ol
+                    class="breadcrumb"
+                  >
+                    <li
+                      class="breadcrumb-item"
+                    >
+                      <a
+                        href="#"
+                        role="button"
+                      >
+                        Список сотрудников
+                      </a>
+                    </li>
+                    <li
+                      aria-current="page"
+                      class="breadcrumb-item active"
+                    >
+                      name
+                       
+                      lastname
+                    </li>
+                  </ol>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <ForwardRef
+                        active={false}
+                        linkProps={Object {}}
+                        onClick={[MockFunction]}
+                      >
+                        Список сотрудников
+                      </ForwardRef>,
+                      <ForwardRef
+                        active={true}
+                        linkProps={Object {}}
+                      >
+                        name
+                         
+                        lastname
+                      </ForwardRef>,
+                    ],
+                    "className": "breadcrumb",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "active": false,
+                        "children": "Список сотрудников",
+                        "linkProps": Object {},
+                        "onClick": [MockFunction],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": <li
+                          class="breadcrumb-item"
+                        >
+                          <a
+                            href="#"
+                            role="button"
+                          >
+                            Список сотрудников
+                          </a>
+                        </li>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "aria-current": undefined,
+                          "children": <ForwardRef>
+                            Список сотрудников
+                          </ForwardRef>,
+                          "className": "breadcrumb-item",
+                          "onClick": [MockFunction],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": "Список сотрудников",
+                              "href": undefined,
+                              "target": undefined,
+                              "title": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <a
+                                href="#"
+                                role="button"
+                              >
+                                Список сотрудников
+                              </a>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Список сотрудников",
+                                "href": "#",
+                                "onClick": [Function],
+                                "onKeyDown": [Function],
+                                "role": "button",
+                                "target": undefined,
+                                "title": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Список сотрудников",
+                              ],
+                              "type": "a",
+                            },
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "displayName": "SafeAnchor",
+                              "render": [Function],
+                            },
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "active": false,
+                          "linkProps": Object {},
+                        },
+                        "displayName": "BreadcrumbItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "active": true,
+                        "children": Array [
+                          "name",
+                          " ",
+                          "lastname",
+                        ],
+                        "linkProps": Object {},
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": <li
+                          aria-current="page"
+                          class="breadcrumb-item active"
+                        >
+                          name
+                           
+                          lastname
+                        </li>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "aria-current": "page",
+                          "children": Array [
+                            "name",
+                            " ",
+                            "lastname",
+                          ],
+                          "className": "breadcrumb-item active",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "name",
+                          " ",
+                          "lastname",
+                        ],
+                        "type": "li",
+                      },
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "active": false,
+                          "linkProps": Object {},
+                        },
+                        "displayName": "BreadcrumbItem",
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": "ol",
+                },
+              ],
+              "type": "nav",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "Item": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "active": false,
+                  "linkProps": Object {},
+                },
+                "displayName": "BreadcrumbItem",
+                "render": [Function],
+              },
+              "defaultProps": Object {
+                "label": "breadcrumb",
+                "listProps": Object {},
+              },
+              "displayName": "Breadcrumb",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "body": false,
+              "children": <ForwardRef>
+                <ForwardRef>
+                  name
+                   
+                  lastname
+                </ForwardRef>
+                <ForwardRef
+                  className="mb-2 text-muted"
+                >
+                  Должность: 
+                  jobPosition
+                </ForwardRef>
+                <ForwardRef>
+                  description
+                </ForwardRef>
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="info"
+                >
+                  Редактировать
+                </ForwardRef>
+                 
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="secondary"
+                >
+                  Вернуться к списку
+                </ForwardRef>
+              </ForwardRef>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    name
+                     
+                    lastname
+                  </div>
+                  <div
+                    class="mb-2 text-muted card-subtitle h6"
+                  >
+                    Должность: 
+                    jobPosition
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    description
+                  </p>
+                  <button
+                    class="btn btn-info"
+                    type="button"
+                  >
+                    Редактировать
+                  </button>
+                   
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                  >
+                    Вернуться к списку
+                  </button>
+                </div>
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ForwardRef>
+                  <ForwardRef>
+                    name
+                     
+                    lastname
+                  </ForwardRef>
+                  <ForwardRef
+                    className="mb-2 text-muted"
+                  >
+                    Должность: 
+                    jobPosition
+                  </ForwardRef>
+                  <ForwardRef>
+                    description
+                  </ForwardRef>
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="info"
+                  >
+                    Редактировать
+                  </ForwardRef>
+                   
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="secondary"
+                  >
+                    Вернуться к списку
+                  </ForwardRef>
+                </ForwardRef>,
+                "className": "card",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <ForwardRef>
+                        name
+                         
+                        lastname
+                      </ForwardRef>,
+                      <ForwardRef
+                        className="mb-2 text-muted"
+                      >
+                        Должность: 
+                        jobPosition
+                      </ForwardRef>,
+                      <ForwardRef>
+                        description
+                      </ForwardRef>,
+                      <ForwardRef
+                        active={false}
+                        disabled={false}
+                        onClick={[MockFunction]}
+                        variant="info"
+                      >
+                        Редактировать
+                      </ForwardRef>,
+                      " ",
+                      <ForwardRef
+                        active={false}
+                        disabled={false}
+                        onClick={[MockFunction]}
+                        variant="secondary"
+                      >
+                        Вернуться к списку
+                      </ForwardRef>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": <div
+                      class="card-body"
+                    >
+                      <div
+                        class="card-title h5"
+                      >
+                        name
+                         
+                        lastname
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Должность: 
+                        jobPosition
+                      </div>
+                      <p
+                        class="card-text"
+                      >
+                        description
+                      </p>
+                      <button
+                        class="btn btn-info"
+                        type="button"
+                      >
+                        Редактировать
+                      </button>
+                       
+                      <button
+                        class="btn btn-secondary"
+                        type="button"
+                      >
+                        Вернуться к списку
+                      </button>
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <ForwardRef>
+                          name
+                           
+                          lastname
+                        </ForwardRef>,
+                        <ForwardRef
+                          className="mb-2 text-muted"
+                        >
+                          Должность: 
+                          jobPosition
+                        </ForwardRef>,
+                        <ForwardRef>
+                          description
+                        </ForwardRef>,
+                        <ForwardRef
+                          active={false}
+                          disabled={false}
+                          onClick={[MockFunction]}
+                          variant="info"
+                        >
+                          Редактировать
+                        </ForwardRef>,
+                        " ",
+                        <ForwardRef
+                          active={false}
+                          disabled={false}
+                          onClick={[MockFunction]}
+                          variant="secondary"
+                        >
+                          Вернуться к списку
+                        </ForwardRef>,
+                      ],
+                      "className": "card-body",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            "name",
+                            " ",
+                            "lastname",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              "name",
+                              " ",
+                              "lastname",
+                            ],
+                            "className": "card-title",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <div
+                              class="card-title h5"
+                            >
+                              name
+                               
+                              lastname
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "name",
+                                " ",
+                                "lastname",
+                              ],
+                              "className": "card-title h5",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "name",
+                              " ",
+                              "lastname",
+                            ],
+                            "type": "div",
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": undefined,
+                          "displayName": "CardTitle",
+                          "render": [Function],
+                        },
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [
+                            "Должность: ",
+                            "jobPosition",
+                          ],
+                          "className": "mb-2 text-muted",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              "Должность: ",
+                              "jobPosition",
+                            ],
+                            "className": "mb-2 text-muted card-subtitle",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <div
+                              class="mb-2 text-muted card-subtitle h6"
+                            >
+                              Должность: 
+                              jobPosition
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Должность: ",
+                                "jobPosition",
+                              ],
+                              "className": "mb-2 text-muted card-subtitle h6",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Должность: ",
+                              "jobPosition",
+                            ],
+                            "type": "div",
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": undefined,
+                          "displayName": "CardSubtitle",
+                          "render": [Function],
+                        },
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": "description",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <p
+                            class="card-text"
+                          >
+                            description
+                          </p>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "description",
+                            "className": "card-text",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "description",
+                          ],
+                          "type": "p",
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": undefined,
+                          "displayName": "CardText",
+                          "render": [Function],
+                        },
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "active": false,
+                          "children": "Редактировать",
+                          "disabled": false,
+                          "onClick": [MockFunction],
+                          "variant": "info",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <button
+                            class="btn btn-info"
+                            type="button"
+                          >
+                            Редактировать
+                          </button>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Редактировать",
+                            "className": "btn btn-info",
+                            "disabled": false,
+                            "onClick": [MockFunction],
+                            "type": "button",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Редактировать",
+                          ],
+                          "type": "button",
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "active": false,
+                            "disabled": false,
+                            "variant": "primary",
+                          },
+                          "displayName": "Button",
+                          "render": [Function],
+                        },
+                      },
+                      " ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "active": false,
+                          "children": "Вернуться к списку",
+                          "disabled": false,
+                          "onClick": [MockFunction],
+                          "variant": "secondary",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <button
+                            class="btn btn-secondary"
+                            type="button"
+                          >
+                            Вернуться к списку
+                          </button>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Вернуться к списку",
+                            "className": "btn btn-secondary",
+                            "disabled": false,
+                            "onClick": [MockFunction],
+                            "type": "button",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Вернуться к списку",
+                          ],
+                          "type": "button",
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "active": false,
+                            "disabled": false,
+                            "variant": "primary",
+                          },
+                          "displayName": "Button",
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": undefined,
+                    "displayName": "CardBody",
+                    "render": [Function],
+                  },
+                },
+              ],
+              "type": "div",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "Body": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardBody",
+                "render": [Function],
+              },
+              "Footer": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardFooter",
+                "render": [Function],
+              },
+              "Header": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardHeader",
+                "render": [Function],
+              },
+              "Img": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "variant": null,
+                },
+                "displayName": "CardImg",
+                "render": [Function],
+              },
+              "ImgOverlay": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardImgOverlay",
+                "render": [Function],
+              },
+              "Link": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardLink",
+                "render": [Function],
+              },
+              "Subtitle": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardSubtitle",
+                "render": [Function],
+              },
+              "Text": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardText",
+                "render": [Function],
+              },
+              "Title": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardTitle",
+                "render": [Function],
+              },
+              "defaultProps": Object {
+                "body": false,
+              },
+              "displayName": "Card",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": <employeeeditmodal
+              employee="[object Object]"
+            />,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "employee": Object {
+                "description": "description",
+                "id": 0,
+                "jobPosition": "jobPosition",
+                "lastname": "lastname",
+                "name": "name",
+              },
+              "handleSubmit": [MockFunction],
+              "onHide": [MockFunction],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "employeeeditmodal",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
+      },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "closeEmployeeEditDialog": [MockFunction],
+        "description": "description",
+        "id": 0,
+        "jobPosition": "jobPosition",
+        "lastname": "lastname",
+        "name": "name",
+        "openEmployeeEditDialog": [MockFunction],
+        "openTable": [MockFunction],
+        "updateEmployee": [MockFunction],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              label="breadcrumb"
+              listProps={Object {}}
+            >
+              <ForwardRef
+                active={false}
+                linkProps={Object {}}
+                onClick={[MockFunction]}
+              >
+                Список сотрудников
+              </ForwardRef>
+              <ForwardRef
+                active={true}
+                linkProps={Object {}}
+              >
+                name
+                 
+                lastname
+              </ForwardRef>
+            </ForwardRef>,
+            <ForwardRef
+              body={false}
+            >
+              <ForwardRef>
+                <ForwardRef>
+                  name
+                   
+                  lastname
+                </ForwardRef>
+                <ForwardRef
+                  className="mb-2 text-muted"
+                >
+                  Должность: 
+                  jobPosition
+                </ForwardRef>
+                <ForwardRef>
+                  description
+                </ForwardRef>
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="info"
+                >
+                  Редактировать
+                </ForwardRef>
+                 
+                <ForwardRef
+                  active={false}
+                  disabled={false}
+                  onClick={[MockFunction]}
+                  variant="secondary"
+                >
+                  Вернуться к списку
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>,
+            <employeeeditmodal
+              employee={
+                Object {
+                  "description": "description",
+                  "id": 0,
+                  "jobPosition": "jobPosition",
+                  "lastname": "lastname",
+                  "name": "name",
+                }
+              }
+              handleSubmit={[MockFunction]}
+              onHide={[MockFunction]}
+            />,
+          ],
+          "fluid": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": <div
+            class="container"
+          >
+            <nav
+              aria-label="breadcrumb"
+            >
+              <ol
+                class="breadcrumb"
+              >
+                <li
+                  class="breadcrumb-item"
+                >
+                  <a
+                    href="#"
+                    role="button"
+                  >
+                    Список сотрудников
+                  </a>
+                </li>
+                <li
+                  aria-current="page"
+                  class="breadcrumb-item active"
+                >
+                  name
+                   
+                  lastname
+                </li>
+              </ol>
+            </nav>
+            <div
+              class="card"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  name
+                   
+                  lastname
+                </div>
+                <div
+                  class="mb-2 text-muted card-subtitle h6"
+                >
+                  Должность: 
+                  jobPosition
+                </div>
+                <p
+                  class="card-text"
+                >
+                  description
+                </p>
+                <button
+                  class="btn btn-info"
+                  type="button"
+                >
+                  Редактировать
+                </button>
+                 
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                >
+                  Вернуться к списку
+                </button>
+              </div>
+            </div>
+            <employeeeditmodal
+              employee="[object Object]"
+            />
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                label="breadcrumb"
+                listProps={Object {}}
+              >
+                <ForwardRef
+                  active={false}
+                  linkProps={Object {}}
+                  onClick={[MockFunction]}
+                >
+                  Список сотрудников
+                </ForwardRef>
+                <ForwardRef
+                  active={true}
+                  linkProps={Object {}}
+                >
+                  name
+                   
+                  lastname
+                </ForwardRef>
+              </ForwardRef>,
+              <ForwardRef
+                body={false}
+              >
+                <ForwardRef>
+                  <ForwardRef>
+                    name
+                     
+                    lastname
+                  </ForwardRef>
+                  <ForwardRef
+                    className="mb-2 text-muted"
+                  >
+                    Должность: 
+                    jobPosition
+                  </ForwardRef>
+                  <ForwardRef>
+                    description
+                  </ForwardRef>
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="info"
+                  >
+                    Редактировать
+                  </ForwardRef>
+                   
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="secondary"
+                  >
+                    Вернуться к списку
+                  </ForwardRef>
+                </ForwardRef>
+              </ForwardRef>,
+              <employeeeditmodal
+                employee={
+                  Object {
+                    "description": "description",
+                    "id": 0,
+                    "jobPosition": "jobPosition",
+                    "lastname": "lastname",
+                    "name": "name",
+                  }
+                }
+                handleSubmit={[MockFunction]}
+                onHide={[MockFunction]}
+              />,
+            ],
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef
+                    active={false}
+                    linkProps={Object {}}
+                    onClick={[MockFunction]}
+                  >
+                    Список сотрудников
+                  </ForwardRef>,
+                  <ForwardRef
+                    active={true}
+                    linkProps={Object {}}
+                  >
+                    name
+                     
+                    lastname
+                  </ForwardRef>,
+                ],
+                "label": "breadcrumb",
+                "listProps": Object {},
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <nav
+                  aria-label="breadcrumb"
+                >
+                  <ol
+                    class="breadcrumb"
+                  >
+                    <li
+                      class="breadcrumb-item"
+                    >
+                      <a
+                        href="#"
+                        role="button"
+                      >
+                        Список сотрудников
+                      </a>
+                    </li>
+                    <li
+                      aria-current="page"
+                      class="breadcrumb-item active"
+                    >
+                      name
+                       
+                      lastname
+                    </li>
+                  </ol>
+                </nav>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "aria-label": "breadcrumb",
+                  "children": <ol
+                    className="breadcrumb"
+                  >
+                    <ForwardRef
+                      active={false}
+                      linkProps={Object {}}
+                      onClick={[MockFunction]}
+                    >
+                      Список сотрудников
+                    </ForwardRef>
+                    <ForwardRef
+                      active={true}
+                      linkProps={Object {}}
+                    >
+                      name
+                       
+                      lastname
+                    </ForwardRef>
+                  </ol>,
+                  "className": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <ol
+                      class="breadcrumb"
+                    >
+                      <li
+                        class="breadcrumb-item"
+                      >
+                        <a
+                          href="#"
+                          role="button"
+                        >
+                          Список сотрудников
+                        </a>
+                      </li>
+                      <li
+                        aria-current="page"
+                        class="breadcrumb-item active"
+                      >
+                        name
+                         
+                        lastname
+                      </li>
+                    </ol>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <ForwardRef
+                          active={false}
+                          linkProps={Object {}}
+                          onClick={[MockFunction]}
+                        >
+                          Список сотрудников
+                        </ForwardRef>,
+                        <ForwardRef
+                          active={true}
+                          linkProps={Object {}}
+                        >
+                          name
+                           
+                          lastname
+                        </ForwardRef>,
+                      ],
+                      "className": "breadcrumb",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "active": false,
+                          "children": "Список сотрудников",
+                          "linkProps": Object {},
+                          "onClick": [MockFunction],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <li
+                            class="breadcrumb-item"
+                          >
+                            <a
+                              href="#"
+                              role="button"
+                            >
+                              Список сотрудников
+                            </a>
+                          </li>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "aria-current": undefined,
+                            "children": <ForwardRef>
+                              Список сотрудников
+                            </ForwardRef>,
+                            "className": "breadcrumb-item",
+                            "onClick": [MockFunction],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": "Список сотрудников",
+                                "href": undefined,
+                                "target": undefined,
+                                "title": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": <a
+                                  href="#"
+                                  role="button"
+                                >
+                                  Список сотрудников
+                                </a>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Список сотрудников",
+                                  "href": "#",
+                                  "onClick": [Function],
+                                  "onKeyDown": [Function],
+                                  "role": "button",
+                                  "target": undefined,
+                                  "title": undefined,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "Список сотрудников",
+                                ],
+                                "type": "a",
+                              },
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "displayName": "SafeAnchor",
+                                "render": [Function],
+                              },
+                            },
+                          ],
+                          "type": "li",
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "active": false,
+                            "linkProps": Object {},
+                          },
+                          "displayName": "BreadcrumbItem",
+                          "render": [Function],
+                        },
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "active": true,
+                          "children": Array [
+                            "name",
+                            " ",
+                            "lastname",
+                          ],
+                          "linkProps": Object {},
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <li
+                            aria-current="page"
+                            class="breadcrumb-item active"
+                          >
+                            name
+                             
+                            lastname
+                          </li>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "aria-current": "page",
+                            "children": Array [
+                              "name",
+                              " ",
+                              "lastname",
+                            ],
+                            "className": "breadcrumb-item active",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "name",
+                            " ",
+                            "lastname",
+                          ],
+                          "type": "li",
+                        },
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "active": false,
+                            "linkProps": Object {},
+                          },
+                          "displayName": "BreadcrumbItem",
+                          "render": [Function],
+                        },
+                      },
+                    ],
+                    "type": "ol",
+                  },
+                ],
+                "type": "nav",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "Item": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "active": false,
+                    "linkProps": Object {},
+                  },
+                  "displayName": "BreadcrumbItem",
+                  "render": [Function],
+                },
+                "defaultProps": Object {
+                  "label": "breadcrumb",
+                  "listProps": Object {},
+                },
+                "displayName": "Breadcrumb",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "body": false,
+                "children": <ForwardRef>
+                  <ForwardRef>
+                    name
+                     
+                    lastname
+                  </ForwardRef>
+                  <ForwardRef
+                    className="mb-2 text-muted"
+                  >
+                    Должность: 
+                    jobPosition
+                  </ForwardRef>
+                  <ForwardRef>
+                    description
+                  </ForwardRef>
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="info"
+                  >
+                    Редактировать
+                  </ForwardRef>
+                   
+                  <ForwardRef
+                    active={false}
+                    disabled={false}
+                    onClick={[MockFunction]}
+                    variant="secondary"
+                  >
+                    Вернуться к списку
+                  </ForwardRef>
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <div
+                  class="card"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="card-title h5"
+                    >
+                      name
+                       
+                      lastname
+                    </div>
+                    <div
+                      class="mb-2 text-muted card-subtitle h6"
+                    >
+                      Должность: 
+                      jobPosition
+                    </div>
+                    <p
+                      class="card-text"
+                    >
+                      description
+                    </p>
+                    <button
+                      class="btn btn-info"
+                      type="button"
+                    >
+                      Редактировать
+                    </button>
+                     
+                    <button
+                      class="btn btn-secondary"
+                      type="button"
+                    >
+                      Вернуться к списку
+                    </button>
+                  </div>
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ForwardRef>
+                    <ForwardRef>
+                      name
+                       
+                      lastname
+                    </ForwardRef>
+                    <ForwardRef
+                      className="mb-2 text-muted"
+                    >
+                      Должность: 
+                      jobPosition
+                    </ForwardRef>
+                    <ForwardRef>
+                      description
+                    </ForwardRef>
+                    <ForwardRef
+                      active={false}
+                      disabled={false}
+                      onClick={[MockFunction]}
+                      variant="info"
+                    >
+                      Редактировать
+                    </ForwardRef>
+                     
+                    <ForwardRef
+                      active={false}
+                      disabled={false}
+                      onClick={[MockFunction]}
+                      variant="secondary"
+                    >
+                      Вернуться к списку
+                    </ForwardRef>
+                  </ForwardRef>,
+                  "className": "card",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <ForwardRef>
+                          name
+                           
+                          lastname
+                        </ForwardRef>,
+                        <ForwardRef
+                          className="mb-2 text-muted"
+                        >
+                          Должность: 
+                          jobPosition
+                        </ForwardRef>,
+                        <ForwardRef>
+                          description
+                        </ForwardRef>,
+                        <ForwardRef
+                          active={false}
+                          disabled={false}
+                          onClick={[MockFunction]}
+                          variant="info"
+                        >
+                          Редактировать
+                        </ForwardRef>,
+                        " ",
+                        <ForwardRef
+                          active={false}
+                          disabled={false}
+                          onClick={[MockFunction]}
+                          variant="secondary"
+                        >
+                          Вернуться к списку
+                        </ForwardRef>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": <div
+                        class="card-body"
+                      >
+                        <div
+                          class="card-title h5"
+                        >
+                          name
+                           
+                          lastname
+                        </div>
+                        <div
+                          class="mb-2 text-muted card-subtitle h6"
+                        >
+                          Должность: 
+                          jobPosition
+                        </div>
+                        <p
+                          class="card-text"
+                        >
+                          description
+                        </p>
+                        <button
+                          class="btn btn-info"
+                          type="button"
+                        >
+                          Редактировать
+                        </button>
+                         
+                        <button
+                          class="btn btn-secondary"
+                          type="button"
+                        >
+                          Вернуться к списку
+                        </button>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <ForwardRef>
+                            name
+                             
+                            lastname
+                          </ForwardRef>,
+                          <ForwardRef
+                            className="mb-2 text-muted"
+                          >
+                            Должность: 
+                            jobPosition
+                          </ForwardRef>,
+                          <ForwardRef>
+                            description
+                          </ForwardRef>,
+                          <ForwardRef
+                            active={false}
+                            disabled={false}
+                            onClick={[MockFunction]}
+                            variant="info"
+                          >
+                            Редактировать
+                          </ForwardRef>,
+                          " ",
+                          <ForwardRef
+                            active={false}
+                            disabled={false}
+                            onClick={[MockFunction]}
+                            variant="secondary"
+                          >
+                            Вернуться к списку
+                          </ForwardRef>,
+                        ],
+                        "className": "card-body",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              "name",
+                              " ",
+                              "lastname",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": Array [
+                                "name",
+                                " ",
+                                "lastname",
+                              ],
+                              "className": "card-title",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <div
+                                class="card-title h5"
+                              >
+                                name
+                                 
+                                lastname
+                              </div>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  "name",
+                                  " ",
+                                  "lastname",
+                                ],
+                                "className": "card-title h5",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "name",
+                                " ",
+                                "lastname",
+                              ],
+                              "type": "div",
+                            },
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "render": [Function],
+                            },
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": undefined,
+                            "displayName": "CardTitle",
+                            "render": [Function],
+                          },
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": Array [
+                              "Должность: ",
+                              "jobPosition",
+                            ],
+                            "className": "mb-2 text-muted",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "children": Array [
+                                "Должность: ",
+                                "jobPosition",
+                              ],
+                              "className": "mb-2 text-muted card-subtitle",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <div
+                                class="mb-2 text-muted card-subtitle h6"
+                              >
+                                Должность: 
+                                jobPosition
+                              </div>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  "Должность: ",
+                                  "jobPosition",
+                                ],
+                                "className": "mb-2 text-muted card-subtitle h6",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Должность: ",
+                                "jobPosition",
+                              ],
+                              "type": "div",
+                            },
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "render": [Function],
+                            },
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": undefined,
+                            "displayName": "CardSubtitle",
+                            "render": [Function],
+                          },
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "children": "description",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <p
+                              class="card-text"
+                            >
+                              description
+                            </p>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "description",
+                              "className": "card-text",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "description",
+                            ],
+                            "type": "p",
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": undefined,
+                            "displayName": "CardText",
+                            "render": [Function],
+                          },
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "active": false,
+                            "children": "Редактировать",
+                            "disabled": false,
+                            "onClick": [MockFunction],
+                            "variant": "info",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <button
+                              class="btn btn-info"
+                              type="button"
+                            >
+                              Редактировать
+                            </button>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Редактировать",
+                              "className": "btn btn-info",
+                              "disabled": false,
+                              "onClick": [MockFunction],
+                              "type": "button",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Редактировать",
+                            ],
+                            "type": "button",
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "active": false,
+                              "disabled": false,
+                              "variant": "primary",
+                            },
+                            "displayName": "Button",
+                            "render": [Function],
+                          },
+                        },
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "active": false,
+                            "children": "Вернуться к списку",
+                            "disabled": false,
+                            "onClick": [MockFunction],
+                            "variant": "secondary",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <button
+                              class="btn btn-secondary"
+                              type="button"
+                            >
+                              Вернуться к списку
+                            </button>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Вернуться к списку",
+                              "className": "btn btn-secondary",
+                              "disabled": false,
+                              "onClick": [MockFunction],
+                              "type": "button",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Вернуться к списку",
+                            ],
+                            "type": "button",
+                          },
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "active": false,
+                              "disabled": false,
+                              "variant": "primary",
+                            },
+                            "displayName": "Button",
+                            "render": [Function],
+                          },
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": undefined,
+                      "displayName": "CardBody",
+                      "render": [Function],
+                    },
+                  },
+                ],
+                "type": "div",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "Body": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardBody",
+                  "render": [Function],
+                },
+                "Footer": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardFooter",
+                  "render": [Function],
+                },
+                "Header": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardHeader",
+                  "render": [Function],
+                },
+                "Img": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "variant": null,
+                  },
+                  "displayName": "CardImg",
+                  "render": [Function],
+                },
+                "ImgOverlay": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardImgOverlay",
+                  "render": [Function],
+                },
+                "Link": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardLink",
+                  "render": [Function],
+                },
+                "Subtitle": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardSubtitle",
+                  "render": [Function],
+                },
+                "Text": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardText",
+                  "render": [Function],
+                },
+                "Title": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "CardTitle",
+                  "render": [Function],
+                },
+                "defaultProps": Object {
+                  "body": false,
+                },
+                "displayName": "Card",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": <employeeeditmodal
+                employee="[object Object]"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "employee": Object {
+                  "description": "description",
+                  "id": 0,
+                  "jobPosition": "jobPosition",
+                  "lastname": "lastname",
+                  "name": "name",
+                },
+                "handleSubmit": [MockFunction],
+                "onHide": [MockFunction],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "employeeeditmodal",
+            },
+          ],
+          "type": "div",
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "fluid": false,
+          },
+          "displayName": "Container",
+          "render": [Function],
+        },
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__linkedRoots__): Array [],
+  Symbol(enzyme.__unrendered__): <EmployeeInfo
+    closeEmployeeEditDialog={[MockFunction]}
+    description="description"
+    id={0}
+    jobPosition="jobPosition"
+    lastname="lastname"
+    name="name"
+    openEmployeeEditDialog={[MockFunction]}
+    openTable={[MockFunction]}
+    updateEmployee={[MockFunction]}
+  />,
+  Symbol(enzyme.__updatedBy__): null,
+}
+`;

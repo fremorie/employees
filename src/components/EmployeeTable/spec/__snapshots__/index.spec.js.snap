@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeTable EmptyTable рендерится 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "getWrappingComponentRenderer": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+    "wrapInvoke": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "nCols": 3,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <tr>
+        <td
+          colspan="3"
+        >
+          Здесь пока ничего нет
+        </td>
+      </tr>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <td
+          colSpan={3}
+        >
+          Здесь пока ничего нет
+        </td>,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <td
+            colspan="3"
+          >
+            Здесь пока ничего нет
+          </td>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Здесь пока ничего нет",
+            "colSpan": 3,
+          },
+          "ref": null,
+          "rendered": Array [
+            "Здесь пока ничего нет",
+          ],
+          "type": "td",
+        },
+      ],
+      "type": "tr",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "nCols": 3,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <tr>
+          <td
+            colspan="3"
+          >
+            Здесь пока ничего нет
+          </td>
+        </tr>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <td
+            colSpan={3}
+          >
+            Здесь пока ничего нет
+          </td>,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <td
+              colspan="3"
+            >
+              Здесь пока ничего нет
+            </td>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Здесь пока ничего нет",
+              "colSpan": 3,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Здесь пока ничего нет",
+            ],
+            "type": "td",
+          },
+        ],
+        "type": "tr",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__linkedRoots__): Array [],
+  Symbol(enzyme.__unrendered__): <EmptyTable
+    nCols={3}
+  />,
+  Symbol(enzyme.__updatedBy__): null,
+}
+`;

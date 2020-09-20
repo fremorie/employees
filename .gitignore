@@ -4,7 +4,11 @@
 /node_modules
 
 # testing
-/coverage
+/coverage/coverage-summary.json
+/coverage/lcov-report
+/coverage/clover.xml
+/coverage/coverage-final.json
+/coverage/lcov.info
 
 # production
 /dist

@@ -3,7 +3,7 @@
 import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 
-import {InputGroup, FormControl, Button, Modal, Form} from 'react-bootstrap';
+import {FormControl, Button, Modal, Form} from 'react-bootstrap';
 
 import {getNextEmployeeId} from '../../selectors';
 import type {Employee} from '../../types';
@@ -133,5 +133,7 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
         </Form>
     );
 };
+
+export {EmployeeForm as Base};
 
 export default EmployeeForm;

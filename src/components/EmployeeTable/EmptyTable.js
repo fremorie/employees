@@ -7,7 +7,7 @@ type Props = {|
 |};
 
 const EmptyTable = ({nCols}: Props) => (
-    <tr colSpan={nCols}>
+    <tr>
         <td colSpan={nCols}>
             Здесь пока ничего нет
         </td>
