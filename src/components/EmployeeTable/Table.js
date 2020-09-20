@@ -11,7 +11,7 @@ import EmptyTable from './EmptyTable';
 const TableHeader = () => (
     <thead>
         <tr>
-            <th>#</th>
+            <th></th>
             <th>Имя</th>
             <th>Фамилия</th>
             <th>Должность</th>

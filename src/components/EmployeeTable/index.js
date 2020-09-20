@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Button} from 'react-bootstrap';
+import {Container, Button, Breadcrumb} from 'react-bootstrap';
 import {Add} from '@material-ui/icons';
 
 import EmployeeTable from './Table';
@@ -40,6 +40,9 @@ const Table = ({
     openEmployeeInfo,
 }: Props) => (
     <Container>
+        <Breadcrumb>
+            <Breadcrumb.Item active>Список сотрудников</Breadcrumb.Item>
+        </Breadcrumb>
         <EmployeeTable employees={employees} openEmployeeInfo={openEmployeeInfo}/>
         <EmployeeAddModal onHide={closeEmployeeAddDialog} handleSubmit={updateEmployee} />
         <Button variant="info" onClick={openEmployeeAddDialog}>

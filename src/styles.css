@@ -1,3 +1,7 @@
 .employeeLine {
     cursor: pointer;
 }
+
+.requiredField {
+    color: red;
+}

@@ -7,8 +7,10 @@ type Props = {|
 |};
 
 const EmptyTable = ({nCols}: Props) => (
-    <tr>
-        {Array.from(Array(nCols).keys()).map((_, i) => <td key={i}>&nbsp;</td>)}
+    <tr colSpan={nCols}>
+        <td colSpan={nCols}>
+            Здесь пока ничего нет
+        </td>
     </tr>
 );
 

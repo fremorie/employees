@@ -49,7 +49,10 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
             validated={validated}
             onSubmit={onSubmit}>
             <Modal.Body>
-                <InputGroup className="mb-3">
+                <Form.Group className="mb-3">
+                    <Form.Label required>
+                        Имя<span className="requiredField">*</span>
+                    </Form.Label>
                     <FormControl
                         placeholder="Имя"
                         aria-label="Username"
@@ -62,9 +65,12 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
                     <FormControl.Feedback type="invalid">
                         Это обязательное поле.
                     </FormControl.Feedback>
-                </InputGroup>
+                </Form.Group>
 
-                <InputGroup className="mb-3">
+                <Form.Group className="mb-3">
+                    <Form.Label>
+                        Фамилия<span className="requiredField">*</span>
+                    </Form.Label>
                     <FormControl
                         placeholder="Фамилия"
                         aria-label="LastName"
@@ -77,9 +83,12 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
                     <FormControl.Feedback type="invalid">
                         Это обязательное поле.
                     </FormControl.Feedback>
-                </InputGroup>
+                </Form.Group>
 
-                <InputGroup className="mb-3">
+                <Form.Group className="mb-3">
+                    <Form.Label>
+                        Должность<span className="requiredField">*</span>
+                    </Form.Label>
                     <FormControl
                         placeholder="Должность"
                         aria-label="JobPosition"
@@ -92,9 +101,10 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
                     <FormControl.Feedback type="invalid">
                         Это обязательное поле.
                     </FormControl.Feedback>
-                </InputGroup>
+                </Form.Group>
 
-                <InputGroup className="mb-3">
+                <Form.Group className="mb-3">
+                    <Form.Label>Описание</Form.Label>
                     <FormControl
                         placeholder="Описание"
                         aria-label="Description"
@@ -104,7 +114,7 @@ const EmployeeForm = ({handleSubmit, onHide, employee, readonly}: Props) => {
                         value={description}
                         readOnly={readonly}
                     />
-                </InputGroup>
+                </Form.Group>
             </Modal.Body>
 
             {!readonly && (

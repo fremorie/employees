@@ -44,6 +44,10 @@ const EmployeeInfo = ({openTable, openEmployeeEditDialog, updateEmployee, closeE
                     <Button variant="info" onClick={openEmployeeEditDialog}>
                         Редактировать
                     </Button>
+                    {' '}
+                    <Button variant="secondary" onClick={openTable}>
+                        Вернуться к списку
+                    </Button>
                 </Card.Body>
             </Card>
 
