@@ -1,5 +1,10 @@
 # employees
 
+[![Test Coverage](./coverage/badge-statements.svg)]()
+[![Test Coverage](./coverage/badge-functions.svg)]()
+[![Test Coverage](./coverage/badge-lines.svg)]()
+[![Test Coverage](./coverage/badge-branches.svg)]()
+
 Install dependencies:
 ```
 npm install
