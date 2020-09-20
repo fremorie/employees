@@ -1,8 +1,10 @@
 // @flow
 
-import React from 'react';
+import React, {useState} from 'react';
 
 import {Table} from 'react-bootstrap';
+
+import {Edit} from '@material-ui/icons';
 
 import type {Employee} from '../../types';
 
@@ -35,8 +37,14 @@ const EmployeeLine = ({
     orderNumber,
     onClick,
 }: EmployeeLineProps) => (
-    <tr onClick={onClick} className="employeeLine">
-        <td>{orderNumber}</td>
+    <tr
+        onClick={onClick}
+        className="employeeLine"
+    >
+        <td width="50px">
+            <span className="editIcon"><Edit fontSize="small" /></span>
+            <span className="orderNumber">{orderNumber}</span>
+        </td>
         <td>{name}</td>
         <td>{lastname}</td>
         <td>{jobPosition}</td>
@@ -64,7 +72,7 @@ const TableBody = ({employees, openEmployeeInfo}: Props) => (
 );
 
 const EmployeeTable = ({employees, openEmployeeInfo}: Props) => (
-    <Table bordered striped hover variant="dark">
+    <Table bordered striped hover variant="dark" responsive="sm">
         <TableHeader />
         <tbody>
             {employees.length

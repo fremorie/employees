@@ -5,3 +5,15 @@
 .requiredField {
     color: red;
 }
+
+.editIcon {
+    display: none;
+}
+
+.employeeLine:hover .editIcon {
+    display: inline;
+}
+
+.employeeLine:hover .orderNumber {
+    display: none;
+}
